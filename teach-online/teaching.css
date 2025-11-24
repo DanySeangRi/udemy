@@ -9,8 +9,7 @@
 
 .hero-section {
     display: flex;
-    height: 60rem;
-    border: 1px solid black;
+    height: 600px;
     background-image: url("img/hero-section.webp");
     background-size: cover;
     background-position: center;
@@ -22,12 +21,28 @@
     flex-direction: column;
     justify-content: center;
     align-self: center;
-    margin-left: 12rem;
-    width: 30rem;
-    border: 1px solid gray;
+    margin-left: 148px;
+    width:300px;
+    /* border: 1px solid gray; */
 }
 
 .tittle h1 {
-    font-size: 4.8rem;
+    font-size: 48px;
+    font-weight: 550;
+}
 
+.tittle p {
+    font-size: 17px;
+    font-weight: 300;
+    margin-top: 8px;
+}
+
+.tittle button {
+    font-weight: 500;
+    color: aliceblue;
+    background-color: rgba(92, 2, 171, 0.879);
+    padding: 10px 0;
+    margin-top: 16px;
+    border: none;
+    border-radius: 4px;
 }
