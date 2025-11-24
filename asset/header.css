@@ -36,12 +36,16 @@ align-items: center;
 gap: 20px;
 }
 
-
 .logo img{
   width: 80px;
  height: 40px;
   
 
+}
+.left:hover .logo a {
+    background: none !important;
+    color: inherit !important;
+    transform: none !important;
 }
 #explore-link{
   text-decoration: none;
