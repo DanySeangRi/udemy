@@ -28,7 +28,6 @@ section.head_title{
 }
 
 .plans_pricing_card .card{
-    
     border:1px solid #cdcdcd;
     border-radius: 10px;
     width: 500px;
@@ -135,6 +134,7 @@ section.head_title{
     color: hsl(257, 78%, 57%);
     background: none;
     outline: none;
+    margin-top: 3rem;
 }
 .button-section button:hover{
     background-color: rgba(161, 125, 229, 0.386);
@@ -150,10 +150,58 @@ section.head_title{
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    margin-top: 3rem;
 }
 .block-companies-logo{
     display:flex;
+    flex-wrap: wrap;
     gap: 5rem;
     justify-content: center;
     align-items: center;
+}
+
+.block-fetch{
+    display: flex;
+    justify-content: end;
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    z-index: 99;
+
+
+}
+
+.block-logo{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.block-logo img{
+    cursor: pointer;
+}
+
+/* hidden by default */
+.info-card{
+    position: absolute;
+    right:0px;
+    object-fit: cover;
+    top: -1000px;
+    width: auto;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(10px);
+    transition: 0.3s;
+}
+
+/* show when hover */
+.block-logo:hover .info-card{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(0);
+    
 }
