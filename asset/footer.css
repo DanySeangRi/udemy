@@ -1,0 +1,59 @@
+.banner{
+height: 5rem;
+border-bottom: 1px solid rgb(255, 255, 255);
+justify-content: space-between;
+padding: 16px 48px;
+display: flex;
+align-items: center;
+background-color: rgba(39, 39, 70, 0.946); 
+color: white;
+}
+.teach-on-udemy button{
+  padding: 0px 12px; 
+  height: 2.5rem; 
+  background: transparent; 
+  border: 1px solid white; 
+  border-radius:5px ;
+}
+.teach-on-udemy a{
+  color: white;
+}
+.teach-on-udemy button:hover{
+ background-color: rgba(255, 255, 255, 0.289);
+}
+.udemy-business:hover{
+  text-decoration: underline rgb(192, 120, 255) ;
+
+}
+.structure-link{
+  
+  display: grid;
+  grid-auto-columns: auto;
+  grid-auto-rows: auto;
+  gap: 1em;
+  grid-template-areas:
+  "c1 c2 c3 c4  "
+  " c5 c6 c7 c8";
+  
+  
+
+}
+
+.columns{
+  min-height: 255px ;
+  min-width: 275px;
+  background:transparent;
+  color: azure;
+   display: flex;
+  flex-direction:column;
+}
+.columns a{
+   color: rgba(255, 255, 255, 0.768);
+  margin: 5px;
+  font-size: 0.85em;
+}
+.columns a:hover{
+  text-decoration: underline rgba(255, 255, 255, 0.716);
+}
+
+
