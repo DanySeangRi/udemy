@@ -19,7 +19,8 @@
     justify-content: center;
     align-self: center;
     margin-left: 148px;
-    inline-size: 300px; 
+    /* width: 20vw; */
+    inline-size: 300px;
 } 
 
 .tittle h1 {
@@ -55,9 +56,13 @@
     margin: 0 86px;
 }
 
-.reason-to-teach h2 {
-    text-align: center;
-    font-size: 3.2rem;
+.reason-tittle {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 2.75rem;
     font-weight: 600;
 }
 
@@ -66,6 +71,7 @@
     justify-content: space-between;
     text-align: center;
     margin-top: 50px;
+    flex: 1 1 100px;
 }
 
 .reason-card .card {
@@ -122,3 +128,30 @@ p {
     font-size: 1rem;
     font-weight: 300;
 }
+
+/* how it work section */
+.how-it-work-container {
+    /* background-color: aquamarine; */
+    height: 50.8rem;
+    padding: 88px 24px;
+    margin: 0 86px;
+    align-items: center;
+}
+
+.htw-tittle h2 {
+    font-weight: 500;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.htw-list ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+li h3 {
+    font-size: 1.3rem;
+    padding: 0 1.2rem;
+}
+
