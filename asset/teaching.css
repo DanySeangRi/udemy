@@ -7,7 +7,7 @@
 .hero-section {
     display: flex;
     height: 600px;
-    background-image: url("img/hero-section.webp");
+    background-image: url("../img/img-teaching/hero-section.webp");
     background-size: cover;
     background-position: center;
 }
