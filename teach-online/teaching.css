@@ -19,8 +19,8 @@
     justify-content: center;
     align-self: center;
     margin-left: 148px;
-    inline-size: 300px;
-}
+    inline-size: 300px; 
+} 
 
 .tittle h1 {
     font-size: 48px;
@@ -57,8 +57,8 @@
 
 .reason-to-teach h2 {
     text-align: center;
-    font-size: 32px;
-    font-weight: bold;
+    font-size: 3.2rem;
+    font-weight: 600;
 }
 
 .reason-to-teach .reason-card {
@@ -86,5 +86,39 @@
     color: rgb(84, 84, 84);
     font-weight: 300;
     margin-top: 8px;
+}
 
+.show-data-container {
+    /* height: 13rem; */
+    height: 13vw;  /* Scales with viewport width */
+    min-height: 8rem;  /* Prevents it from getting too small */
+    width: 100%;
+    background-color: rgba(55, 58, 234, 0.879);
+    align-content: center;
+    flex-wrap: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.data-list ul{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    padding: 0 10rem;
+    color: white;
+}
+
+ul li h3, p {
+    align-self: center;
+    justify-self: center;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 300;
 }
