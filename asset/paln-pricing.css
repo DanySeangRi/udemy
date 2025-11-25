@@ -1,15 +1,15 @@
 
 /* Plans&Pricing section styles */
-section.head_title{
+section.head-title{
     text-align: center;
     padding: 4rem 2rem;
     
 }
-.head_title h1{
+.head-title h1{
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
-.head_title p{
+.head-title p{
     font-size: 1.2rem;
     font-weight: 200;
     color: #555;
@@ -17,7 +17,7 @@ section.head_title{
 
 
 
-.plans_pricing_card{
+.plans-pricing-card{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -27,7 +27,7 @@ section.head_title{
     
 }
 
-.plans_pricing_card .card{
+.plans-pricing-card .card{
     border:1px solid #cdcdcd;
     border-radius: 10px;
     width: 500px;
@@ -35,53 +35,53 @@ section.head_title{
 
 }
 
-.head_card1{
+.head-card1{
     background-color: rgb(231, 231, 231);
     border-radius: 10px 10px 0 0;
     border-top: 10px solid hsl(275, 75%, 55%);
     padding: 1rem 1.2rem;
 
 }
-.head_card2{
+.head-card2{
     background-color: rgb(231, 231, 231);
     border-radius: 10px 10px 0 0;
     border-top: 10px solid hsl(257, 78%, 57%);
     padding: 1rem 1.2rem;
 
 }
-.head_card3{
+.head-card3{
     background-color: rgb(231, 231, 231);
     border-radius: 10px 10px 0 0;
     border-top: 10px solid hsl(257, 78%, 57%);
     padding: 1rem 1.2rem;
 }
-.head_card h3{
+.head-card h3{
     color: rgb(66, 62, 62);
 }
-.head_card p{
+.head-card p{
     font-weight: 200;
     font-size: 12px;
     margin-top: 5px;
 }
-.head_card .team_join{
+.head-card .team-join{
     margin-top: 10px;
     display: flex;
     gap: 5px;
     align-items: center;
 }
-.body_card{
+.body-card{
     padding: 2.5rem 1.2rem;
 }
-.body_card p{
+.body-card p{
     font-weight:100;
     font-size: medium;
 }
-.body_card .p_small{
+.body-card .p-small{
     font-size: 11px;
     font-weight: 400;
     margin-top: 0.8rem;
 }
-.body_card button{
+.body-card button{
     display: flex;
     text-align: center;
     justify-content: center;
@@ -96,17 +96,17 @@ section.head_title{
     cursor: pointer;
 
 }
-.body_card button:hover{
+.body-card button:hover{
     background-color: hsl(275, 75%, 55%);
 }
 
-.footer_card{
+.footer-card{
     display: flex;
     flex-direction: column;
     padding-left: 1.2rem;
     margin-bottom: 2rem;
 }
-.footer_card div{
+.footer-card div{
     display: flex;
     align-items: center;
     gap: 20px;
@@ -179,24 +179,26 @@ section.head_title{
 
 .block-logo img{
     cursor: pointer;
+    /* object-fit: cover; */
+    width:  auto;
 }
 
 /* hidden by default */
+
 .info-card{
     position: absolute;
-    right:0px;
-    object-fit: cover;
-    top: -1000px;
-    width: auto;
+    bottom: 100%; /* show card above the image */
+    right: 0;
     padding: 15px;
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     opacity: 0;
     pointer-events: none;
-    transform: translateX(10px);
+    transform: translateY(10px);
     transition: 0.3s;
 }
+
 
 /* show when hover */
 .block-logo:hover .info-card{
@@ -204,4 +206,178 @@ section.head_title{
     pointer-events: auto;
     transform: translateX(0);
     
+}
+
+/* ############## Section Intro############### */
+
+.block-intro{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+}
+.block-intro h1{
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+.container-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+
+}
+
+.card-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between !important;
+    border: 1px solid rgba(128, 128, 128, 0.451);
+    padding: 1.6rem 1.5rem;
+    flex: 0 1 300px;
+    max-width: 400px;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.card-intro p{
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 1.3rem;
+}
+
+
+.pic-intro p{
+    font-weight: 100;
+    font-size: 14px;
+    color: #66666687;
+}
+.ling-mor-intro a{ 
+    color: rgb(137, 43, 226);
+    font-weight: 100;
+    font-size: 14px;
+}
+/* 
+.block-intro-card{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+} */
+
+.pic-intro .pic-intro-img{
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+.pic-intro-quote{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.name-D{
+    font-weight: bold;
+    color: black !important;
+}
+
+
+
+.head-card-intro{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ############section feature plane############ */
+.block-plan-feature{
+    max-width:1200px;
+    margin: auto;
+    /* background-color: firebrick; */
+}
+
+.box-plan-feature-card{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap:20px;
+    background-color: firebrick;
+
+}
+.box-plan-feature-card .head-card1{
+    text-align: center;
+}
+.card-feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding-bottom: 30px;
+}
+.bt-feature{
+    width: 100%;
+    margin-bottom: 40px;
+}
+.bt-feature button{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0.5rem 0;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(263, 63%, 49%);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.team-join{
+
+    width: 100%;
+}
+.team-join .can-join{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.can-join p{
+    font-weight: 200;
+    font-size: 13px;
+}
+.card-feature{
+    display: flex;
+    align-items: start;
+    width: 250px;
+    gap: 20px;
+}
+.space-feature{
+    display: flex;
+    justify-content: center;
+}
+.card-feature .icon-feature{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-feature p{
+    font-weight: 600;
+    background-color: rgb(231, 231, 231);
+    padding: 2rem;
 }
