@@ -1,11 +1,11 @@
 .banner{
 height: 5rem;
-border-bottom: 1px solid rgb(255, 255, 255);
+border-bottom: 0.5px solid rgba(255, 255, 255, 0.671);
 justify-content: space-between;
 padding: 16px 48px;
 display: flex;
 align-items: center;
-background-color: rgba(39, 39, 70, 0.946); 
+background-color: rgba(25, 25, 49, 0.946);; 
 color: white;
 }
 .teach-on-udemy button{
@@ -25,35 +25,58 @@ color: white;
   text-decoration: underline rgb(192, 120, 255) ;
 
 }
-.structure-link{
-  
+.structure-link {
   display: grid;
-  grid-auto-columns: auto;
-  grid-auto-rows: auto;
   gap: 1em;
   grid-template-areas:
-  "c1 c2 c3 c4  "
-  " c5 c6 c7 c8";
-  
-  
-
+    "c1 c2 c3 c4"
+    "c5 c6 c7 c8";
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.columns{
-  min-height: 255px ;
+.columns {
+  min-height: 180px;
   min-width: 275px;
-  background:transparent;
+  background: transparent;
   color: azure;
-   display: flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
 }
-.columns a{
-   color: rgba(255, 255, 255, 0.768);
-  margin: 5px;
+
+.columns a {
+  color: rgba(255, 255, 255, 0.768);
+  margin: 5px ;
   font-size: 0.85em;
 }
-.columns a:hover{
+
+.columns a:hover {
   text-decoration: underline rgba(255, 255, 255, 0.716);
 }
 
+/* RESPONSIVE LAYOUT */
+@media (max-width: 1024px) {
+  .structure-link {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "c1 c2"
+      "c3 c4"
+      "c5 c6"
+      "c7 c8";
+  }
+}
+
+@media (max-width: 600px) {
+  .structure-link {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "c1"
+      "c2"
+      "c3"
+      "c4"
+      "c5"
+      "c6"
+      "c7"
+      "c8";
+  }
+}
 
