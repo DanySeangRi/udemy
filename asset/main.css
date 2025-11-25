@@ -27,7 +27,7 @@ font-size: 30px;
 max-width: 1200px;
   margin: 0 auto;
   flex-wrap: wrap;
-  background-image: url(../img/slide.png);
+  background-image: url(../img/img-index/slide.png);
 }
 
 .card-course{
@@ -270,7 +270,7 @@ max-width: 1200px;
 }
 @media(max-width:810px){
   .slide-show{
-    background-image: url(../img/slide2.png);
+    background-image: url(../img/img-index/slide2.png);
    max-width: 515px;
    max-height: 300px;
 
@@ -279,7 +279,7 @@ max-width: 1200px;
 }
 @media(max-width :515px){
   .slide-show{
-     background-image: url(../img/slide2.png);
+     background-image: url(../img/img-index/slide2.png);
    max-width: 260px;
    max-height: 200px;
   }
