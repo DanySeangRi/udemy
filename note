@@ -1,0 +1,50 @@
+#toggle {
+    display: none;
+}
+
+.box-faq {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+/* header label with text + icon */
+.faq-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* rotate icon when open */
+#toggle:checked ~ .faq-header .arrow-icon {
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+
+/* default icon style */
+.arrow-icon {
+    width: 18px;
+    transition: 0.3s;
+}
+
+/* hidden box */
+.box {
+    height: 0;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+#toggle:checked ~ .box {
+    height: 130px;  
+}
+.box-faq input:checked ~ .box {
+    height: 130px;
+}
+
+.box-faq input:checked ~ .faq-header .arrow-icon {
+    transform: rotate(180deg);
+}
+
+.box-faq input{
+    display: none;
+}

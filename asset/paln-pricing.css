@@ -1,5 +1,15 @@
 
 /* Plans&Pricing section styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sub-main{
+    max-width: 1200px;
+    margin: auto;
+}
+
 section.head-title{
     text-align: center;
     padding: 4rem 2rem;
@@ -23,16 +33,15 @@ section.head-title{
     justify-content: center;
     align-items: baseline;
     gap: 1rem;
-
-    
+}
+body{
+    height: 1000vh;
 }
 
 .plans-pricing-card .card{
     border:1px solid #cdcdcd;
     border-radius: 10px;
-    width: 500px;
-
-
+    flex: 1 1 300px;
 }
 
 .head-card1{
@@ -210,7 +219,7 @@ section.head-title{
 
 /* ############## Section Intro############### */
 
-.block-intro{
+.max-width{
     padding-top: 5rem;
     padding-bottom: 5rem;
     margin: auto;
@@ -232,7 +241,6 @@ section.head-title{
 .card-intro{
     display: flex;
     flex-direction: column;
-    justify-content: space-between !important;
     border: 1px solid rgba(128, 128, 128, 0.451);
     padding: 1.6rem 1.5rem;
     flex: 0 1 300px;
@@ -309,15 +317,16 @@ section.head-title{
 }
 
 .box-plan-feature-card{
-    /* display: flex;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px; */
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap:20px;
-    background-color: firebrick;
-
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 33;
+}
+.block-plan-feature h1{
+    margin-bottom: 30px;
 }
 .box-plan-feature-card .head-card1{
     text-align: center;
@@ -326,7 +335,7 @@ section.head-title{
     display: flex;
     flex-direction: column;
     align-items: center; 
-    padding-bottom: 30px;
+    padding-bottom: 0px;
 }
 .bt-feature{
     width: 100%;
@@ -362,7 +371,7 @@ section.head-title{
 .card-feature{
     display: flex;
     align-items: start;
-    width: 250px;
+    width: 280px;
     gap: 20px;
 }
 .space-feature{
@@ -376,8 +385,162 @@ section.head-title{
     gap: 20px;
 }
 
+.footer-feature{
+    width: 99.99%;
+}
 .footer-feature p{
     font-weight: 600;
     background-color: rgb(231, 231, 231);
     padding: 2rem;
+}
+
+
+
+.button-hover button{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(263, 63%, 49%);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+.button-hover button:hover{
+    background-color: hsl(275, 75%, 55%);
+}
+
+
+.table{
+    padding: 0px;
+}
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: sans-serif;
+}
+/* .compare-table th, */
+.compare-table td {
+    padding: 18px 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+tr .text-align-left{
+    text-align: left;
+}
+
+
+/* Section title (like "Admin experience") */
+.compare-table .section-title td {
+    background: rgb(231, 231, 231);
+    font-weight: 600;
+    padding: 20px 10px;
+    margin-top: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Checkmark style */
+.check {
+    font-size: 18px;
+    color: #0c6b40;
+    font-weight: bold;
+}
+
+.compare-table tr:last-child td {
+    border-bottom: none;
+}
+
+
+.scrool-sticky {
+    max-height: 400px;
+    overflow:scroll;
+}
+
+
+
+.scrool-sticky::-webkit-scrollbar {
+    display: none; /* Chrome, Edge, Safari hide scrollbar */
+}
+
+tr{
+    transition: 0.3s ease; 
+}
+
+tr:hover{
+    background-color: rgba(161, 125, 229, 0.386);
+}
+
+
+
+
+
+
+/* ################block question################ */
+/* hide checkbox */
+
+
+
+/* hide checkbox */
+#toggle {
+    display: none;
+}
+
+.box-faq {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+/* header label with text + icon */
+.faq-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* rotate icon when open */
+/* #toggle:checked ~ .faq-header .arrow-icon {
+    transform: rotate(180deg);
+    transition: 0.3s;
+} */
+
+/* default icon style */
+.arrow-icon {
+    width: 18px;
+    transition: 0.3s;
+}
+
+/* hidden box */
+.box {
+    height: 0;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+/* show box when checked */
+#toggle:checked ~ .box {
+    height: 130px;  /* adjust if needed */
+}
+.box-faq input:checked ~ .box {
+    height: 130px;
+}
+
+/* .box-faq input:checked ~ .faq-header .arrow-icon {
+    transform: rotate(180deg);
+} */
+
+
+.box-faq input{
+    display: none;
 }
