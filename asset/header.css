@@ -1,12 +1,12 @@
 
  * {
- margin: 0;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif, "Kantumruy Pro", sans-serif;
   text-decoration: none;
   list-style: none;
- }
+}
 
 .container{
   width: auto;
@@ -16,7 +16,7 @@
 body {
   height: auto;
   scroll-behavior: smooth;
-  height: 300vh;
+  
 }
 
 .navbar{
@@ -36,12 +36,16 @@ align-items: center;
 gap: 20px;
 }
 
-
 .logo img{
   width: 80px;
- height: 40px;
+  height: 40px;
   
 
+}
+.left:hover .logo a {
+    background: none !important;
+    color: inherit !important;
+    transform: none !important;
 }
 #explore-link{
   text-decoration: none;

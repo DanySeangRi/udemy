@@ -1,0 +1,82 @@
+.banner{
+height: 5rem;
+border-bottom: 0.5px solid rgba(255, 255, 255, 0.671);
+justify-content: space-between;
+padding: 16px 48px;
+display: flex;
+align-items: center;
+background-color: rgba(25, 25, 49, 0.946);; 
+color: white;
+}
+.teach-on-udemy button{
+  padding: 0px 12px; 
+  height: 2.5rem; 
+  background: transparent; 
+  border: 1px solid white; 
+  border-radius:5px ;
+}
+.teach-on-udemy a{
+  color: white;
+}
+.teach-on-udemy button:hover{
+ background-color: rgba(255, 255, 255, 0.289);
+}
+.udemy-business:hover{
+  text-decoration: underline rgb(192, 120, 255) ;
+
+}
+.structure-link {
+  display: grid;
+  gap: 1em;
+  grid-template-areas:
+    "c1 c2 c3 c4"
+    "c5 c6 c7 c8";
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.columns {
+  min-height: 180px;
+  min-width: 275px;
+  background: transparent;
+  color: azure;
+  display: flex;
+  flex-direction: column;
+}
+
+.columns a {
+  color: rgba(255, 255, 255, 0.768);
+  margin: 5px ;
+  font-size: 0.85em;
+}
+
+.columns a:hover {
+  text-decoration: underline rgba(255, 255, 255, 0.716);
+}
+
+/* RESPONSIVE LAYOUT */
+@media (max-width: 1024px) {
+  .structure-link {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "c1 c2"
+      "c3 c4"
+      "c5 c6"
+      "c7 c8";
+  }
+}
+
+@media (max-width: 600px) {
+  .structure-link {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "c1"
+      "c2"
+      "c3"
+      "c4"
+      "c5"
+      "c6"
+      "c7"
+      "c8";
+  }
+}
+
