@@ -140,6 +140,7 @@ max-width: 1200px;
 .individual-card:hover  .sub-card{
   display: block;
 }
+
 .outline-course{
   padding: 0px 24px;
    /* border: 1px solid black; */
@@ -156,8 +157,15 @@ max-width: 1200px;
   height: 283.109px;
   margin: 10px;
   position: relative;
-  /* background-color: black; */
+transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
 }
+.individual-card:hover {
+  transform: translateY(-8px); /* slight scale makes smoother perception */
+  z-index: 999;
+  
+}
+
 .individual-card h6{
    color: rgba(0, 0, 0, 0.414);
 }
@@ -167,6 +175,7 @@ max-width: 1200px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center left;
+  border-radius: 5px;
  
 }
 .price #dis{
