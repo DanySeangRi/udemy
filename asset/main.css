@@ -137,7 +137,7 @@ max-width: 1200px;
 .individual-card:hover .sub-card-5{
   display: block;
 }
-.individual-card:hover .sub-card{
+.individual-card:hover  .sub-card{
   display: block;
 }
 .outline-course{
