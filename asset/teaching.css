@@ -7,7 +7,7 @@
 .hero-section {
     display: flex;
     height: 600px;
-    background-image: url("../img/img-teaching/hero-section.webp");
+    background-image: url("img/hero-section.webp");
     background-size: cover;
     background-position: center;
 }
@@ -19,8 +19,9 @@
     justify-content: center;
     align-self: center;
     margin-left: 148px;
+    /* width: 20vw; */
     inline-size: 300px;
-}
+} 
 
 .tittle h1 {
     font-size: 48px;
@@ -49,23 +50,32 @@
 
 /* reason to teach section  */
 .reason-to-teach {
-    height: 500px;
-    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 500px; */
+    gap: 2rem;
     padding: 85px 24px;
     margin: 0 86px;
+    flex-wrap: wrap;
 }
 
-.reason-to-teach h2 {
+.reason-tittle {
+    width: 100%;
     text-align: center;
-    font-size: 32px;
-    font-weight: bold;
 }
 
-.reason-to-teach .reason-card {
+.reason-tittle h2 {
+    font-size: 2.75rem;
+    font-weight: 600;
+}
+
+.reason-card {
     display: flex;
-    justify-content: space-between;
     text-align: center;
-    margin-top: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .reason-card .card {
@@ -86,5 +96,257 @@
     color: rgb(84, 84, 84);
     font-weight: 300;
     margin-top: 8px;
+}
 
+
+ /* show data section  */
+.show-data-container {
+    /* height: 13rem; */
+    height: 13vw;  /* Scales with viewport width */
+    min-height: 8rem;  /* Prevents it from getting too small */
+    max-height: 13rem;  /* Prevents it from getting too big */
+    background-color: rgba(55, 58, 234, 0.879);
+    align-content: center;
+    flex-wrap: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.data-list ul{
+    display: flex;
+    /* height: 100%; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10rem;
+    color: white;
+}
+
+ul li h3, p {
+    align-self: center;
+    justify-self: center;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/* how it work section */
+.how-it-work-container {
+    height: 45rem;
+    padding: 88px 24px;
+    margin: 0 86px;
+    align-items: center;
+    padding-bottom: 0;
+}
+
+.htw-tittle h2 {
+    font-weight: 500;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.htw-list ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+li h3 {
+    font-size: 1.3rem;
+    padding: 0 1.8rem;
+}
+
+.htw-description {
+    display: flex;
+    height: auto;
+    padding: 0 8rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.htw-info-left {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;   
+}
+
+.content {
+    width: 23rem;
+}
+
+.content h3, p{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    max-width: 100%;
+}
+
+.htw-info-right {
+    flex: 1;
+    justify-content: end;
+    align-items: end;   
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* feed back section */
+.feed-back-container {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+
+.feed-back-container::-webkit-scrollbar {
+    display: none;
+}
+
+.gp-fb-card {
+    display: flex;
+    flex-grow: 1;
+    background-color: oklch(0.9759 0.0029 264.54);
+}
+
+.fb-card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 75rem;
+    gap: 2rem;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.fb-left {
+    text-align: center;
+}
+
+.lecturer {
+    height: 400px;
+    min-width: 400px;
+}
+
+.fb-right {
+    display: flex;
+    text-align: start;
+}
+
+.fb-right .content {
+    width: 400px;
+}
+
+.content p {
+    justify-self: start;
+    font-size: 1.3rem;
+}
+
+.content p:nth-child(2),
+.content p:nth-child(3) {
+    font-size: 1rem;
+}
+
+.content p:nth-child(2) {
+    font-weight: 500;
+}
+
+.content p:nth-child(3) {
+    font-weight: 300;
+    color: oklch(0.4809 0.0371 279.08);
+}
+
+
+/* here to help section */
+.here-to-help {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 260px;
+    padding-inline: 0;
+    margin: 0 140px;
+    padding-bottom: 100px;
+    /* flex-wrap: wrap; */
+}
+
+.here-to-help img {
+    width: 480px;
+    height: 480px;
+    /* position: absolute; */
+}
+
+/* .hth-pic-1 {
+    inset-inline-start: -350px;
+}
+
+.hth-pic-2 {
+    inset-inline-end: -350px;
+} */
+
+.hth-text {
+    display: flex;
+    padding-inline: 160px;
+    align-items: center;
+    justify-content: center;
+    inline-size: 100%;
+    min-width: 700px;
+    padding: 0 160px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.hth-text h2 {
+    font-size: 48px;
+    white-space: nowrap;
+    margin-bottom: 1rem;
+}
+
+.ud-btn-label {
+    text-decoration: underline;
+}
+
+span {
+    font-weight: 500;
+}
+
+/* pale section  */
+.pale-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: oklch(0.9759 0.0029 264.54);
+    width: 100%;
+    height: 360px;
+}
+
+.pale-text {
+    text-align: center;
+    margin: 0 340px;
+}
+
+.pale-text h2 {
+    font-size: 48px;
+    white-space: nowrap;
+    margin-bottom: 1rem;
+}
+
+.pale-text p {
+    font-size: 24px;
+    margin: 16px 240px;
+}
+
+.pale-text button {
+    background-color: oklch(0.4841 0.2342 293.93);
+    padding: 12px 132px;
+    color: aliceblue;
+    border-radius: 4px;
+    margin-top: 16px;
+    border: none;
 }
