@@ -16,7 +16,6 @@ section.head-title{
     
 }
 .head-title h1{
-    font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 .head-title p{
@@ -34,14 +33,14 @@ section.head-title{
     align-items: baseline;
     gap: 1rem;
 }
-body{
+/* body{
     height: 1000vh;
-}
+} */
 
 .plans-pricing-card .card{
     border:1px solid #cdcdcd;
     border-radius: 10px;
-    flex: 1 1 300px;
+    flex: 1 1 500px;
 }
 
 .head-card1{
@@ -245,15 +244,16 @@ body{
     padding: 1.6rem 1.5rem;
     flex: 0 1 300px;
     max-width: 400px;
-    gap: 20px;
+    justify-content: space-between;
     border-radius: 10px;
+    height: 300px;
 }
 
-.card-intro p{
+/* .card-intro p{
     font-weight: 300;
     font-size: 13px;
     line-height: 1.3rem;
-}
+} */
 
 
 .pic-intro p{
@@ -492,9 +492,9 @@ tr:hover{
 
 
 /* hide checkbox */
-#toggle {
+/* #toggle {
     display: none;
-}
+} */
 
 .box-faq {
     border-bottom: 1px solid #ccc;
@@ -510,10 +510,10 @@ tr:hover{
 }
 
 /* rotate icon when open */
-/* #toggle:checked ~ .faq-header .arrow-icon {
+.box-faq input:checked ~ .faq-header .arrow-icon {
     transform: rotate(180deg);
     transition: 0.3s;
-} */
+}
 
 /* default icon style */
 .arrow-icon {
@@ -529,18 +529,107 @@ tr:hover{
 }
 
 /* show box when checked */
-#toggle:checked ~ .box {
-    height: 130px;  /* adjust if needed */
+.box-faq input:checked ~ .box {
+    height: 130px;  
 }
 .box-faq input:checked ~ .box {
-    height: 130px;
+    margin-top: 20px;
+}
+.box p{
+    font-weight: 100;
+    font-size: 13px;
 }
 
-/* .box-faq input:checked ~ .faq-header .arrow-icon {
+.box-faq input:checked ~ .faq-header .arrow-icon {
     transform: rotate(180deg);
-} */
+}
 
+.box-faq{
+    max-width: max-content;
+    
+}
+.sub-block-question h1{
+    margin-bottom: 30px;
+    font-weight: 500;
+}
 
+.border-top-fap{
+    border-top:1px solid #ccc;
+
+}
 .box-faq input{
     display: none;
+}
+.sub-block-question{
+    background-color:#0c6b40;
+height: 700px;
+    /* border-top:1px solid #ccc; */
+}
+
+
+.body-card p{
+    font-size: 16px !important;
+}
+
+
+
+/* Small devices (landscape phones, 576px to 767px) */
+
+@media (min-width: 973px){
+    .box-check-plan input{
+        display: none;
+    }
+    .head-card img{
+        display: none;
+    }
+    /* hidden box */
+    .box {
+        height: 400px;
+        overflow: hidden;
+        transition: 0.4s ease;
+
+    }
+    .team-join img{
+        display: block;
+    }
+    
+}
+
+/* Medium devices (tablets, 768px to 1024px) */
+@media (max-width: 972px ){
+    .box-check-plan input{
+    display: none;
+    }
+  
+
+    .plan-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+
+    .arrow-icon {
+        width: 18px;
+        transition: 0.3s;
+    }
+
+    /* hidden box */
+    /* .box {
+        height: 0;
+        overflow: hidden;
+        transition: 0.4s ease;
+    } */
+
+  
+    .box-check-plan input:checked ~ .plan-header .arrow-icon {
+        transform: rotate(180deg);
+        transition: 0.3s;
+    }
+    .box-check-plan input:checked ~ .box {
+    height: max-content;
+    }
+
+
 }
