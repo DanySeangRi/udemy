@@ -1,0 +1,63 @@
+        <div class="card card3">
+
+            <div class="head-card3 head-card">
+              <h3>Personal Plan</h3>
+              <p>For you</p>
+              <div class="team-join">
+                <img style="width: 15px; height: 100%;" src="https://cdn-icons-png.flaticon.com/128/15478/15478234.png"
+                  alt="">
+                <p>Individual</p>
+              </div>
+            </div>
+
+            <div class="body-card">
+              <p>Starting at $10.00 per month</p>
+              <p class="p-small">Billed monthly or annually. Cancel anytime.</p>
+              <button>Try it free &nbsp; <img style="width: 15px; height: 100%; margin-top: 2px; color: white;;"
+                  src="https://cdn-icons-png.flaticon.com/128/7191/7191571.png" alt=""></button>
+            </div>
+            <div class="footer-card">
+              <div>
+                <img style="width: 17px;" src="https://cdn-icons-png.flaticon.com/128/8832/8832119.png" alt="">
+                <p>Access to 26,000+ top courses</p>
+              </div>
+              <div>
+                <img style="width: 17px;" src="https://cdn-icons-png.flaticon.com/128/8832/8832119.png" alt="">
+                <p>Certification prep</p>
+              </div>
+              <div>
+                <img style="width: 17px;" src="https://cdn-icons-png.flaticon.com/128/8832/8832119.png" alt="">
+                <p>Goal-focused recommendations</p>
+              </div>
+              <div>
+                <img style="width: 17px;" src="https://cdn-icons-png.flaticon.com/128/8832/8832119.png" alt="">
+                <p>AI-powered coding exercises</p>
+              </div>
+              <div>
+                <img style="width: 17px;" src="https://cdn-icons-png.flaticon.com/128/8832/8832119.png" alt="">
+                <p>Advanced analytics and insights</p>
+              </div>
+              <div>
+                <img style="width: 17px;" src="https://cdn-icons-png.flaticon.com/128/8832/8832119.png" alt="">
+                <p>Dedicated customer success team</p>
+              </div>
+
+
+              <div>
+                <img style="width: 17px;" src="https://cdn-icons-png.flaticon.com/128/8832/8832119.png" alt="">
+                <p>International course collection featuring 15 languages</p>
+              </div>
+              <div>
+                <img style="width: 17px;" src="https://cdn-icons-png.flaticon.com/128/8832/8832119.png" alt="">
+                <p>Customizable content</p>
+              </div>
+              <div>
+                <img style="width: 17px;" src="https://cdn-icons-png.flaticon.com/128/8832/8832119.png" alt="">
+                <p>Hands-on tech training with add-on</p>
+              </div>
+              <div>
+                <img style="width: 17px;" src="https://cdn-icons-png.flaticon.com/128/8832/8832119.png" alt="">
+                <p>Strategic implementation services with add-on</p>
+              </div>
+            </div>
+          </div>
