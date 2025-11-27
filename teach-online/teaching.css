@@ -50,28 +50,32 @@
 
 /* reason to teach section  */
 .reason-to-teach {
-    height: 500px;
-    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 500px; */
+    gap: 2rem;
     padding: 85px 24px;
     margin: 0 86px;
+    flex-wrap: wrap;
 }
 
 .reason-tittle {
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    text-align: center;
 }
 
-h2 {
+.reason-tittle h2 {
     font-size: 2.75rem;
     font-weight: 600;
 }
 
-.reason-to-teach .reason-card {
+.reason-card {
     display: flex;
-    justify-content: space-between;
     text-align: center;
-    margin-top: 50px;
-    flex: 1 1 100px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .reason-card .card {
@@ -94,10 +98,13 @@ h2 {
     margin-top: 8px;
 }
 
+
+ /* show data section  */
 .show-data-container {
     /* height: 13rem; */
     height: 13vw;  /* Scales with viewport width */
     min-height: 8rem;  /* Prevents it from getting too small */
+    max-height: 13rem;  /* Prevents it from getting too big */
     width: 100%;
     background-color: rgba(55, 58, 234, 0.879);
     align-content: center;
@@ -108,8 +115,9 @@ h2 {
 
 .data-list ul{
     display: flex;
-    height: 100%;
+    /* height: 100%; */
     justify-content: space-between;
+    align-items: center;
     padding: 0 10rem;
     color: white;
 }
@@ -131,11 +139,11 @@ p {
 
 /* how it work section */
 .how-it-work-container {
-    /* background-color: aquamarine; */
-    height: 50.8rem;
+    height: 45rem;
     padding: 88px 24px;
     margin: 0 86px;
     align-items: center;
+    padding-bottom: 0;
 }
 
 .htw-tittle h2 {
@@ -152,6 +160,106 @@ p {
 
 li h3 {
     font-size: 1.3rem;
-    padding: 0 1.2rem;
+    padding: 0 1.8rem;
 }
 
+.htw-description {
+    display: flex;
+    height: auto;
+    padding: 0 8rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.htw-info-left {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;   
+}
+
+.content {
+    width: 23rem;
+}
+
+.content h3, p{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    max-width: 100%;
+}
+
+.htw-info-right {
+    flex: 1;
+    justify-content: end;
+    align-items: end;   
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* feed back section */
+.feed-back-container {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+
+.feed-back-container::-webkit-scrollbar {
+    display: none;
+}
+
+.gp-fb-card {
+    display: flex;
+    flex-grow: 1;
+    background-color: oklch(0.9759 0.0029 264.54);
+}
+
+.fb-card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 75rem;
+    gap: 2rem;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.fb-left {
+    text-align: center;
+}
+
+.lecturer {
+    height: 400px;
+    min-width: 400px;
+}
+
+.fb-right {
+    display: flex;
+    text-align: start;
+}
+
+.fb-right .content {
+    width: 400px;
+}
+
+.content p {
+    justify-self: start;
+    font-size: 1.3rem;
+}
+
+.content p:nth-child(2),
+.content p:nth-child(3) {
+    font-size: 1rem;
+}
+
+.content p:nth-child(2) {
+    font-weight: 500;
+}
+
+.content p:nth-child(3) {
+    font-weight: 300;
+    color: oklch(0.4809 0.0371 279.08);
+}
